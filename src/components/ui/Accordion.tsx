@@ -19,7 +19,7 @@ export default function Accordion({ handleSelect, selected, item }: Props) {
       key={item.id}
       className="border-b border-white/5 first:border-t lg:px-20 md:px-14 px-10 py-8 cursor-pointer"
     >
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between hover:underline items-center">
         <p className="text-xl font-semibold">{item.question}</p>
         <button>
           <ChevronUp

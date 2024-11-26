@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { RedditIcon, TelegramIcon, TwitterIcon } from "./icons/icons";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -13,10 +14,18 @@ export default function Footer() {
           alt="logo"
         />
         <ul className="flex font-extrabold text-lg items-center md:space-x-10 space-x-4">
-          <li>About Us</li>
-          <li>Roadmap</li>
-          <li>FAQs</li>
-          <li>Contact Us</li>
+          <Link className="hover:text-primaryText" href={"/"}>
+            <li>About Us</li>
+          </Link>
+          <Link className="hover:text-primaryText" href={"/"}>
+            <li>Roadmap</li>
+          </Link>
+          <Link className="hover:text-primaryText" href={"/"}>
+            <li>FAQs</li>
+          </Link>
+          <Link className="hover:text-primaryText" href={"/"}>
+            <li>Contact Us</li>
+          </Link>
         </ul>
         <div>
           <p className="font-extrabold text-2xl text-center">
